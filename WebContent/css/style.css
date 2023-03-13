@@ -1,0 +1,401 @@
+@charset "UTF-8";
+
+/******* body ********/
+body {
+	font-family: "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "メイリオ", "Meiryo", Sans-Serif;
+	background-image: url(../image/bg_img.png);
+}
+
+
+button.button {
+	margin-top: 30px;
+	font-size: 21px;
+	font-weight: bold;
+	padding: 14px 30px;
+	background-color: #89c3eb;
+    color:#fff;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 1em
+}
+button:hover {
+	transition: .5s;
+	background-color: rgba(137, 195, 235, .7)
+}
+/*******************/
+.wrapper {
+	width: 1040px;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, .9);
+}
+.wrapper p {
+	font-weight: bold;
+	font-size: 18px;
+}
+.section_top img {
+	max-width: 100%;
+}
+.img {
+	width: 15%;
+	float: left;
+}
+.img img:hover{
+	opacity: .8;
+	transition: 0.3s;
+}
+.section_top {
+	height: 200px;
+
+}
+.title {
+	float: left;
+	margin-left: 10px;
+}
+.back a {
+	text-decoration: none;
+	color: blue;
+	font-size: 18px;
+}
+.back a:hover{
+	transition: 0.5s;
+}
+/**  最初のページ  **/
+.section_title {
+	height: 500px;
+}
+.title_img {
+	text-align: center;
+}
+.title_img img {
+	width: 70%;
+}
+.top button {
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+.top button:hover {
+	opacity: 0.6;
+	transition-duration: 0.3s;
+}
+.top {
+	text-align: center;
+}
+/********************/
+
+/**  ログインページ  **/
+.section_login {
+	padding-top:30px;
+}
+.table_center {
+	margin-left: 30%;
+}
+.table_center td {
+	font-size: 20px;
+	font-weight: bold;
+}
+.table_center p {
+	color: red;
+}
+.regist {
+	margin-left: 40px;
+}
+.regist p {
+	font-size: 20px;
+}
+.regist button.button {
+	padding: 10px 30px;
+	margin-bottom: 30px;
+}
+.regist a {
+	text-decoration: none;
+	color: blue;
+	font-size: 18px;
+}
+.regist a:hover{
+	transition: 0.5s;
+	color: brown;
+}
+.logsubWrapper {
+	background-color: rgba(250, 250, 250, .9);
+}
+.error {
+	text-align: center;
+}
+.error p {
+	color: red;
+}
+/********************/
+
+/**  新規登録ページ  **/
+.confirm_button {
+	text-align: center;
+}
+
+/**********************/
+
+/**  投稿ページ  **/
+.dog_back a:hover{
+	color: brown;
+}
+.cat_back a:hover{
+	color: black;
+}
+.section_loadImage img {
+	max-width: 100%;
+	height: 300px;
+}
+.section_loadImage {
+	width: 100%;
+	height: 250px;
+	text-align: center;
+}
+.title {
+	width: 80%;
+	text-align: center;
+}
+.uploadButton {
+    display:inline-block;
+    position:relative;
+    overflow:hidden;
+    border-radius:3px;
+    background:#099;
+    color:#fff;
+    text-align:center;
+    padding:10px;
+    line-height:30px;
+    width:180px;
+    cursor:pointer;
+}
+.uploadButton:hover {
+    background:#0aa;
+}
+.uploadButton input[type=file] {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    cursor:pointer;
+    opacity:0;
+}
+.uploadValue {
+    display:none;
+    background:rgba(255,255,255,0.2);
+    border-radius:3px;
+    padding:3px;
+    color:#fff;
+}
+textarea {
+	width: 400px;
+	height: 300px;
+	margin-top: 100px;
+	line-height: 1.5em;
+	border-radius: 5px;
+	font-size: 18px;
+}
+.section_main {
+	margin-top: 50px;
+	padding-bottom: 40px;
+	width: 60%;
+	margin-left: 20%;
+	border: solid 1px #000;
+	background-color: #fbfaf5;
+}
+.tab_item {
+	width: calc(100%/2);
+	height: 50px;
+	background-color: #e7e7eb;
+	line-height: 50px;
+	font-size: 16px;
+	text-align: center;
+	border-bottom: solid 0.5px #000;
+	display: block;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+	transition: all 0.2s ease;
+}
+.tab_item:hover {
+	opacity: 0.75;
+	background-color: #a0d8ef;
+}
+input[name="tab_item"] {
+	display: none;
+}
+.sub_content {
+	display: none;
+	padding: 40px 40px 0;
+	clear: both;
+	overflow: hidden;
+	text-align: center;
+}
+#dog:checked ~ #dog_content,
+#cat:checked ~ #cat_content{
+	display: block;
+}
+
+.section_main input:checked + .tab_item {
+	background-color: #a0d8ef;
+}
+.sub_content_description button.button {
+	margin-top: 100px;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 15px 45px;
+    color:#fff;
+    border-style: none;
+    cursor: pointer;
+}
+.sub_content_description button.button:hover {
+	transition: .6s;
+}
+button.dogButton:hover {
+	background-color: #e49e61;
+	color: #000;
+}
+button.catButton:hover {
+	background-color: #000;
+	color: #fff;
+}
+textarea {
+	width: 400px;
+}
+
+/********************/
+
+/**  ホーム  **/
+
+.section_homeMain {
+	margin-left: 40px;
+	width: 960px;
+	border: solid 1px #000;
+	background-color: rgba(238, 187, 203, .8);
+}
+.sub_content_home {
+	display: none;
+	clear: both;
+	overflow: hidden;
+}
+.submission_button {
+	float: right;
+}
+.menu_button button.button {
+	font-size: 22px;
+	letter-spacing: 0.3em;
+	font-weight: bold;
+	padding: 15px 60px;
+    color:#fff;
+    border-style: none;
+    cursor: pointer;
+    margin: 40px;
+}
+.section_homeMain input:checked + .tab_item {
+	background-color: #a0d8ef;
+}
+
+
+/**************/
+
+.content_button {
+	text-align: center;
+	margin-left: 10%;
+}
+.content_img_align {
+	width: 90%;
+}
+.content_img_align img{
+	border: 1px solid #ddd;
+	overflow: hidden;
+	cursor: pointer;
+}
+.content_img_align img:hover {
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+	transform: translateY(-10px);
+	transition-duration: 0.5s;
+}
+.content_description button {
+	width: 90%;
+	padding: 0;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+.content_description button img {
+	width: 100%;
+	clear: both;
+	display: block;
+	transition-duration: 0.5s;
+}
+.home_scroll {
+	margin: 0;
+	overflow: scroll;
+	height: 960px;
+}
+/********************/
+
+/*** 投稿詳細ページ ***/
+.submission_main_content img{
+	max-width: 45%;
+	margin: 20px;
+}
+.submission_main_content {
+	background-color: rgba(238, 187, 203, .8);
+	margin: 30px;
+}
+.text_content {
+	width: 50%;
+	text-align: left;
+	float: right;
+}
+.text_content p {
+	margin-left: 20px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.user_name {
+	width: 100%;
+}
+.name {
+	border-bottom: 1px solid #000;
+}
+.look {
+	text-align: center;
+	font-weight: bold;
+}
+.look a {
+	font-size: 22px;
+}
+.delete_button {
+	float:right;
+}
+.delete_button button{
+	padding: 14px 30px;
+}
+/********************/
+
+.footer_top {
+	text-align: center;
+	margin-top: 30px;
+}
+.footer_top img {
+	width: 15%;
+}
+/**********************************/
+#slideshow {
+	position: relative;
+	height: 480px;
+}
+#slideshow IMG {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 8;
+	opacity: 0.0;
+}
+#slideshow IMG.active {
+	z-index: 10;
+	opacity: 1.0;
+}
+#slideshow IMG.last-active {
+	z-index: 9;
+}

@@ -1,0 +1,20 @@
+CREATE DATABASE petter;
+-- CREATE DATABASE petter CHARACTER SET utf8;
+
+
+CREATE TABLE accounts(
+	address VARCHAR(30) PRIMARY KEY,
+	password VARCHAR(10),
+	user_name VARCHAR(20)
+);
+CREATE TABLE submission(
+	submission_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+	address VARCHAR(30),
+	typeindex INT(1),
+	image VARCHAR(20),
+	text VARCHAR(100)
+);
+CREATE TABLE typeMap(
+	typeindex INT(1) PRIMARY KEY,
+	type nvarchar(1)
+);
